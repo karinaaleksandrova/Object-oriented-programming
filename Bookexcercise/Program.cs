@@ -14,7 +14,10 @@ namespace BookExercise
             Book mathBook = new Book();
             mathBook.title = "Matikka 1 lk";
             mathBook.author = "Matti Meikäläinen";
+            mathBook.price = 15;
             mathBook.PrintBookInfo();
+            abcBook.CompareBooks(mathBook);
+            mathBook.CompareBooks(abcBook);
         }
 
     }

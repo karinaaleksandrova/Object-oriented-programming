@@ -29,7 +29,7 @@
             for (int i=0; i<companies.Length; i++)
             {
                 Console.WriteLine(companies[i].ToString());
-                companies[i].CalculateProfit();
+                companies[i]?.CalculateProfit();
             }
             
         }

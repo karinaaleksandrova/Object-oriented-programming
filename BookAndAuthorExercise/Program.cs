@@ -1,4 +1,5 @@
-﻿namespace BookAndAuthorExercise
+﻿using Literature;
+namespace BookAndAuthorExercise
 {
     internal class Program
     {
@@ -15,7 +16,16 @@
             b2.GetBookDetails();
             //  Console.WriteLine(b.ToString());
             Console.WriteLine(b1.GetBookDetails("978-456-78910"));
-            Console.WriteLine(b1);
+           // Console.WriteLine(b1);
+
+            Book b3 = new Book("A.Lindgren", "Otava", "Peppi Pitkätossu", 26.99, "978-323-23418");
+            Author a1 = new Author("A.Lindgren", "01.01.1700", b3);
+            Author a2 = new Author("Katti Matikainen", "09.04.2035", b2);
+            Author a3 = new Author("Tove Jansson", "02.02.1999");
+            a1.PrintInformation();
+            a2.PrintInformation();
+            a3.PrintInformation();
+           
         }
     }
 }

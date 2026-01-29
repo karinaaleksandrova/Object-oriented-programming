@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee", "Employee\Employ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAndAuthorExercise", "BookAndAuthorExercise\BookAndAuthorExercise.csproj", "{9079702F-F6CC-4FD3-A80D-DC9A2913021A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleExcercise", "VehicleExcercise\VehicleExcercise.csproj", "{D1EC8C8C-0203-4A0B-8040-1512AB8D0F30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +46,10 @@ Global
 		{9079702F-F6CC-4FD3-A80D-DC9A2913021A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9079702F-F6CC-4FD3-A80D-DC9A2913021A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9079702F-F6CC-4FD3-A80D-DC9A2913021A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1EC8C8C-0203-4A0B-8040-1512AB8D0F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EC8C8C-0203-4A0B-8040-1512AB8D0F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EC8C8C-0203-4A0B-8040-1512AB8D0F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EC8C8C-0203-4A0B-8040-1512AB8D0F30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

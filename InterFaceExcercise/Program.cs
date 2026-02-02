@@ -23,7 +23,7 @@
             }
             Store KMarket = new Store("K-kauppa", 1000000);
             KMarket.AddProduct(new Product("Maito", 1, 150));
-            KMarket.AddProduct(new Product("RedBull", 2.30, 200));
+            KMarket.AddProduct(new Product("RedBull", 2.30, 200)); 
             KMarket.PrintProducts();
         }
     }

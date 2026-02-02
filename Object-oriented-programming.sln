@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterFaceExcercise", "InterFaceExcercise\InterFaceExcercise.csproj", "{7665957D-94DD-43E3-BF0F-74191E71A1E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparableExercise", "IComparableExercise\IComparableExercise.csproj", "{ECF4B025-7DAB-4FD4-98F5-1FAC839E85EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{7665957D-94DD-43E3-BF0F-74191E71A1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7665957D-94DD-43E3-BF0F-74191E71A1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7665957D-94DD-43E3-BF0F-74191E71A1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF4B025-7DAB-4FD4-98F5-1FAC839E85EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF4B025-7DAB-4FD4-98F5-1FAC839E85EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF4B025-7DAB-4FD4-98F5-1FAC839E85EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF4B025-7DAB-4FD4-98F5-1FAC839E85EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

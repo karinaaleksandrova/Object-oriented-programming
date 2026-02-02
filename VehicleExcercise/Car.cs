@@ -7,11 +7,12 @@ namespace VehicleExcercise
 {
     internal class Car : Vehicle
     {
-        protected int engine;
+        protected double engine;
         protected string type;
         protected int doors;
+        private object car3;
 
-        public Car(string brand, string model, int modelYear, string price, int engine, string type, int doors) : base(brand, model, modelYear, price)
+        public Car(string brand, string model, string modelYear, string color,  double engine, string type, int doors, double price) : base(brand, model, modelYear, price)
 
         {
             this.engine = engine;
@@ -19,10 +20,52 @@ namespace VehicleExcercise
             this.doors = doors;
         }
 
-        public override void PrintInformation()
+        public Car Car1
         {
-            base.PrintInformation();
-            Console.WriteLine($"Car Information: Brand: {brand}, Model: {model} Model Year: {modelYear},Type: {type}, Engine: {engine}, Doors: {doors}, Price: {price}€");
+            get;
+            set;
+        }
+        public Car Car2
+        {
+            get;
+            set;
+        }
+        public Car Car3
+        {
+            get;
+            set;
+        }
+        public override bool Equals(object? obj)
+        {
+            Car? car = obj as Car;
+            return car !=null &&
+                this.brand == car.brand &&
+                this.model == car.model &&
+                this.modelYear == car.modelYear &&
+                this.price == car.price &&
+                this.engine == car.engine &&
+                this.type == car.type &&
+                this.doors == car.doors;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public void printInformation()
+        {
+            Console.WriteLine(this.ToString());
+        }
+        public override string? ToString()
+        {
+            return $"Auton merkki: {this.brand}\n" +
+                $"Auton malli: {this.model}\n" +
+                $"Vuosimalli: {this.modelYear}\n" +
+                $"Hinta: {this.price}euroa\n" +
+                $"Tyyppi: {this.type}\n" +
+                $"Moottorin koko:{this.engine}\n" +
+                $"Ovien lukumäärä:{this.doors}\n";
         }
 
     }

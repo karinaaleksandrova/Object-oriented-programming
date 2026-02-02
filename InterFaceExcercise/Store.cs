@@ -37,7 +37,10 @@ namespace InterFaceExcercise
             }
         }
 
-       
+       public void AddCustomer(Customer customer)
+        {
+            this.CustomerList.Add(Customer);
+        }
     }
 
    

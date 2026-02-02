@@ -6,26 +6,43 @@ using System.Threading.Tasks;
 
 namespace VehicleExcercise
 {
-    internal class Vehicle
+    abstract class Vehicle
     {
-        protected string brand;
-        protected string model;
-        protected int modelYear;
-        protected string price;
+        protected string brand = string.Empty;
+        protected string model = string.Empty;
+        protected string modelYear = string.Empty;
+        protected double price = 0;
 
-      
+      public string Brand
+        {
+            get
+            {
+                return brand;
+            }
+            set => brand = null;
+        }
 
-        public Vehicle(string brand, string model, int modelYear, string price)
+        public Vehicle(string brand, string model, string modelYear, double price)
         {
             this.brand = brand;
             this.model = model;
             this.modelYear = modelYear;
             this.price = price;
         }
+
         public virtual void PrintInformation()
         {
-            Console.WriteLine("Vehicle information");
-            Console.WriteLine($"Brand: {brand}, Model: {model}, Model year {modelYear}, Price: {price}");
+            Console.WriteLine($"Merkki: {this.brand}, Malli: {this.model}, Vuosimalli: {this.modelYear}, Hinta: {this.price}");
+        }
+        public override bool Equals(object? obj)
+        {
+            Vehicle? vehicle = obj as Vehicle;
+            return (vehicle != null) &&
+                this.brand == Brand;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterFaceExcercise
 {
-    internal class Store : IProducts,ICustomers
+    internal class Store : IProducts, ICustomers
  
     {
         private string name;
@@ -21,7 +21,7 @@ namespace InterFaceExcercise
             this.revenue = revenue;
         }
       
-
+      
         
 
         public void AddProduct(Product product)
@@ -37,9 +37,20 @@ namespace InterFaceExcercise
             }
         }
 
-       public void AddCustomer(Customer customer)
+
+        private List<Product> IProducts = new List<Product>();
+        private List<Customer> Customers = new List<Customer>();
+        public void AddCustomers(Customer customer)
         {
-            this.CustomerList.Add(Customer);
+            this.customers.Add(customer);
+        }
+
+        public void PrintCustomers()
+        {
+            foreach(Customer c in this.customers)
+            {
+                Console.WriteLine(c);
+            }
         }
     }
 

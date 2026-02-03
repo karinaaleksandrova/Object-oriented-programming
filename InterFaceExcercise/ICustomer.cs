@@ -8,5 +8,7 @@ namespace InterFaceExcercise
 {
     internal interface ICustomer
     {
+        bool MatchesName(string name);
+        double GetBonus();
     }
 }

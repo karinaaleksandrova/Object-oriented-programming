@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterFaceExcercise
 {
-    internal class Product :IProduct
+    internal class Product : IProduct
     {
         private string name;
         private double price;

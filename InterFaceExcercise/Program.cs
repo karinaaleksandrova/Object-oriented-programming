@@ -23,8 +23,29 @@
             }
             Store KMarket = new Store("K-kauppa", 1000000);
             KMarket.AddProduct(new Product("Maito", 1, 150));
-            KMarket.AddProduct(new Product("RedBull", 2.30, 200)); 
+            KMarket.AddProduct(new Product("RedBull", 2.30, 200));
+            KMarket.AddProduct(new Product("Jauheliha", 6.99, 450));
             KMarket.PrintProducts();
+
+            List<Customer> customers = new List<Customer>();
+            customers.Add(new Customer("Miska Suhonen", 1908.89));
+            customers.Add(new Customer("Elina Huttunen", 3453.00));
+            customers.Add(new Customer("Moona Mannari", 9999.99));
+
+            bool found = false;
+            foreach (Customer c in customers)
+                if (c.MatchesName("Elina Huttunen"))
+                {
+                    Console.WriteLine("Elina Huttunen löytyi");
+                    Console.WriteLine(c.ToString());
+                    Console.WriteLine($"Bonukset: {c.GetBonus():F2}");
+                    found = true;
+                    break;
+                }
+                if (!found)
+                {
+                    Console.WriteLine("Asiakkaan nimi ei tiedossa");
+                }
         }
     }
 }

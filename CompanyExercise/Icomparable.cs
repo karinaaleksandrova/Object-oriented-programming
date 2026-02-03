@@ -1,12 +1,12 @@
-﻿  using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterFaceExcercise
+namespace CompanyExercise
 {
-    internal interface ICustomers
+    internal interface Icomparable
     {
     }
 }

@@ -23,10 +23,13 @@ namespace InterFaceExcercise
         {
             return this.price * this.count;
         }
-
+        public double CalculateTotals()
+        {
+            return count;
+        }
         public bool MatchesName(string value)
         {
-            if (this.name == value)
+            if (name == value)
             {
                return true;
             }
@@ -38,7 +41,7 @@ namespace InterFaceExcercise
 
         public override string? ToString()
         {
-            return $"Nimi: {this.name}, Hinta: {this.price}, Määrä: {this.count}";
+            return $"Nimi: {this.name}, Hinta: {this.price} €, Määrä: {this.count}";
         }
     }
 }

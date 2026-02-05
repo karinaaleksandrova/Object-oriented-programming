@@ -38,21 +38,14 @@ namespace InterFaceExcercise
             }
         }
 
-        public bool MatchesName(string name)
-        { 
-           if (this.name == name)
-            {
-                return true;
-            }
-            else
-            {
-               return false;
-            }
+        public bool MatchesName(string value)
+        {
+            return this.name == value;      
         }
 
         public override string ToString()
         {
-            return $"Name: {name}, Purchases: {purchases}";
+            return $"Asiakkaan nimi: {name}, Asiakkaan ostokset: {purchases}";
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Literature //BookAndAuthorExercise
+namespace Literature // BookAndAuthorExercise
 
 {
     internal class Book
@@ -39,7 +39,9 @@ namespace Literature //BookAndAuthorExercise
             Isbn = isbn;
         }
 
-        public string? Name
+   
+
+    public string? Name
         {
             get
             {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Literature // BookAndAuthorExercise
 
 {
-    internal class Book
+    internal class Books : IComparable<Books>
     {
         private string? name;
         private string author;
@@ -20,7 +20,7 @@ namespace Literature // BookAndAuthorExercise
         private const string Prefix = "978";
 
 
-        public Book()
+        public Books()
         {
             this.name = String.Empty;
             this.author = String.Empty;
@@ -30,7 +30,7 @@ namespace Literature // BookAndAuthorExercise
             theme = String.Empty;
         }
 
-        public Book(string author, string publisher, string name, double price, string isbn)
+        public Books(string author, string publisher, string name, double price, string isbn)
         {
             this.author = author;
             this.publisher = publisher;
@@ -130,7 +130,11 @@ namespace Literature // BookAndAuthorExercise
             }
         }
 
-
+        public int CompareTo(Books? other)
+        {
+            if (other == null) return 1;
+            return this.price.CompareTo(other.price);
+        }
     }
 }
 
